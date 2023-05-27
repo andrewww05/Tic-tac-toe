@@ -19,3 +19,5 @@
   </li>
   <li>Enjoy the game!</li>
 </ol>
+  <h2>A web version of this game is also available!</h2>
+  <h2><a href="https://myprojectslistbruh.000webhostapp.com/site/tictactoe/index.html">Link!🔗</a></h2>
