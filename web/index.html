@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Tic Tac Toe</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="stylesheets/styles.css" rel="stylesheet">
+        <script type="text/javascript" src="scripts/soundmanager2.js"></script>
+        <script src="scripts/jquery-3.6.4.min.js"></script>
+    </head>
+    <body>
+        <div class="select-mode-menu">
+            <div class="select-container">
+                <div class="select-option vs-ai-mode">
+                    <img src="stylesheets/img/menu/ai.png" class="option-img" alt="VS AI">
+                </div>
+                <div class="select-option vs-mode">
+                    <img src="stylesheets/img/menu/vs.png" class="option-img" alt="1VS1">
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="debugmenu" style="display: none;">
+                <h2 class="dm-text">DEBUG MENU</h2>
+                <div class="dm-button-container">
+                    <button class="dm-button cross_gm_btn">CROSS CHOOSING (GOD MODE)</button>
+                </div>
+                <div class="dm-button-container">
+                    <button class="dm-button circle_gm_btn">CIRCLE CHOOSING (GOD MODE)</button>
+                </div>
+                <div class="dm-button-container">
+                    <button class="dm-button cross_state_btn">CROSS CHOOSING</button>
+                </div>
+                <div class="dm-button-container">
+                    <button class="dm-button circle_state_btn">CIRCLE CHOOSING</button>
+                </div>
+                <div class="dm-button-container">
+                    <button class="dm-button clear_state_btn">CLEAR SELECT MODE STAT</button>
+                </div>
+                <div class="dm-button-container">
+                    <button class="dm-button cross_chaos_btn">CROSS CHAOS</button>
+                </div>
+                <div class="dm-button-container">
+                    <button class="dm-button circle_chaos_btn">CIRCLE CHAOS</button>
+                </div>
+                <div class="dm-button-container">
+                    <button class="dm-button clear_slots_btn">CLEAR SLOTS</button>
+                </div>
+                <div class="dm-button-container">
+                    <button class="dm-button rungame_1vs1_btn">RUN 1VS1 CLASSIC</button>
+                </div>
+                <div class="dm-button-container">
+                    <button class="dm-button breakgame_1vs1_btn">BREAK 1VS1 CLASSIC</button>
+                </div>
+                <div class="dm-button-container">
+                    <button class="dm-button against-ai-cross-btn">RUN GAME AGAINST AI (AI - CROSS)</button>
+                </div>
+                <div class="dm-button-container">
+                    <button class="dm-button against-ai-circle-btn">#IN DEV# AGAINST AI (AI - CIRCLE)</button>
+                </div>
+            </div>
+            <div class="logo-container">
+                <h1 class="logo-text">Tic Tac Toe</h1>
+            </div>
+            <div class="additional-bars">
+                <div class="timer-thumbnail-container">
+                    <div class="timer-gif-container">
+                        <img class="timer-thumbnail-gif" src="stylesheets/img/sources/countdown.gif" alt="">
+                    </div>
+                    <div class="timer-countdown-text">
+                        <div class="countdown-el-time">WAITING...</div>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="replay-btn-container">
+                        <img src="stylesheets/img/buttons/replaybtn.png" alt="" class="replay-btn">
+                    </div>
+                    <div class="return-btn-container">
+                        <img src="stylesheets/img/buttons/return.png" alt="" class="return-menu-btn">
+                    </div>
+                </div>
+            </div>
+            <div class="playboard_container">
+                <div class="playboard">
+                    <div class="win-image-container">
+                        <img src="stylesheets/img/win/crosswin.png" alt="" class="win-image">
+                    </div>
+                    <div class="win-line-container">
+                        <img src="stylesheets/img/lines/xy/159line.png" alt="" class="win-line-img">
+                    </div>
+                    <div class="slot slot1 unused"></div>
+                    <div class="slot slot2 unused"></div>
+                    <div class="slot slot3 unused"></div>
+                    <div class="slot slot4 unused"></div>
+                    <div class="slot slot5 unused"></div>
+                    <div class="slot slot6 unused"></div>
+                    <div class="slot slot7 unused"></div>
+                    <div class="slot slot8 unused"></div>
+                    <div class="slot slot9 unused"></div>
+                    <div class="playboard-grid">
+                        <img src="stylesheets/img/sources/drawngrid.png" alt="" class="drawn-grid">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

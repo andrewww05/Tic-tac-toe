@@ -1,0 +1,262 @@
+@font-face {
+    font-family: HaloDomas;
+    src: url(fonts/HEADERFONT/HaloDomasSolid-lgrnD.ttf);
+}
+
+@font-face {
+    font-family: DeliciousHandrawn;
+    src: url(fonts/DRAWNFONT/DeliciousHandrawn-Regular.ttf);
+}
+/* DEBUG MENU */
+.debugmenu{
+    background-color: rgb(89, 89, 89);
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    width: 250px;
+    height: 460px;
+    z-index: 3;
+}
+
+.dm-text{
+    margin: 3px;
+    text-align: center;
+}
+
+.dm-button-container{
+    width: 150px;
+    margin: 0 auto;
+}
+
+.dm-button{
+    margin: 0 auto;
+    width: 150px;
+    height: 35px;
+}
+/* DEBUG MENU */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    user-select: none;
+}
+
+.main {
+    display: none;
+    min-width: 500px;
+    height: 100vh;
+    background-image: url(img/sources/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.game {
+    display: flex;
+    min-width: 500px;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.logo-container{
+    position: absolute;
+    width: 100vw;
+    height: 50px;
+    text-align: center;
+    margin: 20px auto;
+    flex: 0 0 auto;
+    z-index: 0;
+}
+.logo-text{
+    font-size: 54px;
+    font-family:'HaloDomas';
+}
+
+.playboard-grid{
+    position: absolute;
+    z-index: 0;
+    
+}
+
+.playboard_container{
+    background-color: none;
+    border-radius: 16px;
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+}
+.playboard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items:center;
+}
+
+.win-line-container{
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    z-index: 2;
+}
+.win-line-img{
+    height: 500px;
+}
+
+.slot{
+    background-color: none;
+    border-radius: 8px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    margin: 8.3px;
+    z-index: 1;
+}
+
+.crossed{
+    background-image: url('img/sources/cross.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: default;
+}
+
+.crosschoosing .unused:hover{
+    background-image: url('img/sources/cross.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.circled{
+    background-image: url('img/sources/circle.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: default;
+}
+
+.circlechoosing .unused:hover{
+    background-image: url('img/sources/circle.png');
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.additional-bars{
+    position: absolute;
+    width: 100vw;
+    height: 72px;
+}
+.timer-thumbnail-container{
+    transition: 0.5s;
+    display: none;
+    width: 48px;
+    height: 72px;
+    margin: 0 auto;
+    z-index: 4;
+}
+.timer-gif-container{
+    width: 36px;
+    margin: 0 auto;
+}
+
+.timer-thumbnail-gif{
+    width: 36px;
+
+}
+
+.countdown-el-time{
+    font-size: 24px;
+    font-family: DeliciousHandrawn;
+    text-align: center;
+    width: 48px;
+    margin: -10px auto;
+}
+
+.replay-btn-container{
+    display: none;
+    cursor: pointer;
+    width: 119px;
+    margin: 0 auto;
+
+}
+.replay-btn{
+    width: 119px;
+    height: 72px;
+}
+
+.return-btn-container{
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    z-index: 4;
+}
+.return-menu-btn{
+    width: 72px;
+    cursor: pointer;
+}
+
+.win-image-container{
+    display: none;
+    transition: 1s;
+    position: absolute;
+    z-index: 3;
+}
+
+.select-mode-menu {
+    min-width: 500px;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(img/menu/menu.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+}
+
+.select-container{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.select-option {
+    justify-content: center;
+    grid-row: 2;
+    height: 100%;
+    width: 100%;
+}
+
+.option-img {
+    transition: 0.333s;
+    max-width: 100%;
+    max-height: 100%;
+    cursor: pointer;
+}
+
+.option-img:hover {
+    opacity: 0.4;
+}
+
+.vs-ai-mode{
+    grid-column: 2;
+}
+
+.vs-mode {
+    grid-column: 4;
+}
