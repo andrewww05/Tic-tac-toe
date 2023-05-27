@@ -8,7 +8,7 @@
 </ol>
 <h3>How to run the game on a computer:</h3>
 <ol>
-  <li>Unzip the game to a place convenient for you/</li>
+  <li>Unzip the game to a place convenient for you.</li>
   <li>Install <a href="https://www.python.org/downloads/">Python 3</a> (if not installed).
   </li>
   <li>Install pywebview (if not installed):
